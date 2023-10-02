@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#top-nav{
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1;
+background-color: white;
+width: 100%;
+box-shadow: 0px 2px 5px black;
+}
+#top-nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 20px;
+    letter-spacing: 8px;
+    display: inline-block;
+    padding:6px ;
+    margin:13px ;
+    letter-spacing: 3px;
+}
+#top-nav a:hover{
+    background-color: rgb(221, 211, 211);
+}
+#top-nav-right{
+    float: right;
+    margin-right: 10px;
+}
+#top-nav-right a{
+    letter-spacing: 5px;
+}
+#home-section{
+    position: relative;
+    margin-bottom: 50px;
+}
+#home-section h1{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 45px;
+    color: grey;
+}
+#section-container{
+    width: 70%;
+    margin: auto;
+}
+#about-section p{
+    font-size:18px ;
+}
+#about-section{
+    margin-bottom: 50px;
+    padding: 70px;
+}
+#img-container{
+    box-sizing: border-box;
+    width: 49%;
+    float: left;
+    padding: 10px 20px;
+}
+#img-container img{
+    opacity: 0.7;
+    border-radius: 4px;
+}
+#gray{
+    color: gray;
+}
+#text-container{
+    box-sizing: border-box;
+    width: 49%;
+    float:right;
+    padding: 10px 15px; 
+    font-size: 20px;
+    
+
+}
+#about-section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#menu-section{
+    padding-top: 70px;
+    margin-bottom: 50px;
+}
+#menu-section::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+#text-container2{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 49%;
+    float: left;
+}
+#text-container2 p{
+    color: gray;
+    font-size: 17px;
+}
+   
+#img-container2{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 49%;
+    float: left;
+}
+#img-container2 img{
+    opacity: 0.7;
+    border-radius: 4px;
+}
+#contact-section{
+    padding: 70px 20px;
+    margin-bottom: 50px;
+}
+#contact-section p{
+    font-size: 15px;
+}
+#contact-section b{
+    font-weight: bolder;
+    font-size: 18px;
+    color: #607d8b;
+}
+#contact-section input[type="text"], #contact-section input[type="datetime-local"] ,#contact-section input[type="number"]{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.btn{
+    border: none;
+    background-color: rgba(207, 202, 202, 0.418);
+    font-family: serif;
+    font-size: 15px;
+    padding: 15px;
+}
+.btn:after{
+      content: "\27F9";
+    font-family: "Font Awesome 5 Free"; 
+    padding-left: 7px;
+    margin: 5px;
+    font-weight: bolder;
+    font-size: 15px;
+} 
+.btn:hover{
+        background-color: rgb(131, 122, 122);
+    }
+#footer{
+    padding: 40px;
+    background-color:  rgba(179, 173, 173, 0.329);
+    text-align: center;
+    font-size: 20px;
+}
+#footer a{
+    color: green;
+}
+@media screen  and (max-width:850px){
+    body{
+        font-family: 'Tektur', cursive;
+    }
+    #top-nav a{
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    #top-nav-right a{
+        display: none;
+    
+    }
+    
+    #home-section h1{
+        bottom: 1px;
+        left: 29px;
+        font-size: 70px;
+        color: rgb(94, 92, 92);
+    }
+    #home-section img{
+        width: 112vw;
+    }
+    #img-container img{
+        display: none;
+    }
+    #section-container{
+        width: 100%;
+        margin: auto;
+    }
+    #about-section{
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    /* #about-section p{
+        font-size:13px ;
+        margin: 30px;
+    } */
+    #text-container h1{
+        font-size: 35px;
+        margin-right: 30%;
+    }
+    #text-container{
+        width:100%;
+        font-weight: bolder;
+        /* margin-right: 27px;
+        padding-left: 12px; */
+        padding-top: 30px ;
+        padding-left: 25px;
+        padding-right: 30px;
+        margin: 10px;
+        font-size: 15px;
+    }
+    #text-container p{
+        font-size: 16px;
+        margin-right: 30%;
+        /* margin-right: 34px; */
+    }
+    #gray{
+        display: none;
+    }
+    #menu-section{
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    #text-container2{
+        box-sizing: border-box;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    #text-container2 h1{
+        margin-right: 30%;
+
+    }
+    #text-container2 p{
+        color: rgb(131, 126, 126);
+        font-size: 15px;
+        line-height:25px;
+        
+    }
+    #img-container2 img{
+        /* box-sizing: border-box;
+        padding: 10px 20px; */
+        width: 67vw;
+       
+        /* object-fit: cover;
+       justify-content: center; */
+        /* margin-right: 40px; */
+        /* margin-left: 20px; */
+    }
+    #img-container2 img{
+        opacity: 0.7;
+        border-radius: 4px;
+    }
+    #contact-section h1{
+        margin-left: 15px; 
+    }
+    #contact-section p{
+        font-size:17px ;
+        margin-left: 2px;
+        margin-right: 35%;
+        padding: 12px;
+    }
+    #contact-section b{
+        font-size:18px ;
+        margin-left: 2px;
+        margin-right: 23px;
+    }
+#footer{
+    padding-right: 35%;
+}
+}
+@media screen  and (max-width:400px){
+    body{
+        font-family: 'Josefin Slab', serif;
+    }
+    #top-nav a{
+        font-size: 18px;
+    }
+    #top-nav-right a{
+        display: none;
+    
+    }
+    
+    #home-section h1{
+        bottom: 1px;
+        left: 10px;
+        font-size: 15px;
+        color: rgb(15, 15, 15);
+    }
+    #home-section img{
+        width: 155vw;
+    }
+    #img-container img{
+        display: none;
+    }
+    #section-container{
+        width: 100%;
+        margin: auto;
+    }
+    #about-section{
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    /* #about-section p{
+        font-size:13px ;
+        margin: 30px;
+    } */
+    #text-container{
+        width:100%;
+        font-weight: bolder;
+        /* margin-right: 27px;
+        padding-left: 12px; */
+        padding-top: 30px ;
+        padding-left: 40px;
+        padding-right: 32px;
+        margin: 16px;
+        font-size: 10px;
+    }
+    #text-container h1{
+        font-size: xx-large;
+        margin-right: 20%;
+    }
+    /* #text-container h1{
+        font-size: 20px;
+        font-weight: bolder;
+    } */
+    #text-container p{
+        font-size: 14px;
+        margin-right: 13%;
+           
+        
+    }
+    #gray{
+        display: none;
+    }
+    
+    #menu-section{
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    #text-container2{
+        box-sizing: border-box;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    #text-container2 h1{
+        margin-right: 20px;
+
+    }
+    #text-container2 p{
+        color: rgb(131, 126, 126);
+        font-size: 15px;
+        line-height:25px;
+        
+    }
+    #img-container2 img{
+        /* box-sizing: border-box;
+        padding: 10px 20px; */
+        width: 90vw;
+       
+        /* object-fit: cover;
+       justify-content: center; */
+        /* margin-right: 40px; */
+        /* margin-left: 20px; */
+    }
+    #img-container2 img{
+        object-fit: cover;
+        opacity: 0.7;
+        border-radius: 4px;
+    }
+    #contact-section p{
+        font-size:14px ;
+        margin-left: 20px;
+        margin-right: 4%;
+        padding: 12px;
+    }
+    #contact-section b{
+        font-size:12px ;
+        margin-left: 24px;
+        margin-right: 20px;
+    }
+    #contact-section input[type="text"], #contact-section input[type="datetime-local"] ,#contact-section input[type="number"]{
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid gray;
+        font-size: 15px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    #footer{
+        padding-right: 20%;
+    }
+    }
+
